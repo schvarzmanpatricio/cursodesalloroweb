@@ -1,0 +1,208 @@
+* {
+    margin: 0%;
+}
+/* tipografia */
+@font-face {
+    font-family: "varelaround-regular";
+    src: url("../tipografìas/VarelaRound-Regular.ttf");
+}
+body {
+    font-family: "varelaround-regular";
+    
+}
+h2{
+    padding: 20px;
+}
+main{
+    background-color: gray;
+    
+}
+img{
+    margin: 10px;
+    border: solid;
+
+
+
+}
+footer {
+     background-color: lightblue;
+}
+.tituloGrande {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fondo {
+    background-color: rgb(236, 228, 228);
+}
+
+/* tipografia en archivo "nosotros" */
+.normal {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200%;
+} 
+.lineado{
+    
+    width: 250px;
+    display: flex;
+    flex-direction:column;
+  
+}
+.productos {
+    font-style:normal;
+    font-weight: 1000;
+    font-size: 20px;
+    text-align: left;
+    line-height: 200%;
+    padding: 20px;
+
+
+
+
+}
+
+.menu ul li {
+    display: inline-block;
+    width: 250px;
+
+}
+#gridArea {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 0px;
+    
+
+
+
+
+}
+
+/* media queries */
+/* desktop */
+@media (min-width: 1024px) {
+    div {
+        background-color: orange;
+        }
+
+        #gridArea {
+            display: grid;
+            grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer"
+            ;
+            grid-template-columns: 1fr;
+
+        
+        
+        }
+        nav {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-flow: row-reverse;
+        }
+        span {
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 100vh;
+            width: 100vh;
+            text-align: center;
+            border-radius: 100px;
+    
+    
+          
+        
+        }
+    
+
+    
+        
+        
+
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+    footer {
+        background-color: red;
+    }
+    #gridArea {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-row-gap: 0px;
+    }
+    nav {
+        width: 50%;
+        text-align: left;
+        border-radius: 50px;
+        display: flex;
+        flex-flow: row;
+    }
+    span {
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+        height: 100px;
+        width: 100vh;
+        text-align: left;
+        border-radius: 0px;
+
+
+      
+    
+    }
+
+    body {
+        height: 100vh;
+    }
+    
+
+
+    
+
+}
+/* smartphone */
+@media (max-width: 480px) {
+    #gridArea {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 0px;
+
+    
+    
+    }
+  
+       
+
+    
+}
+
+
