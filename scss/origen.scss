@@ -1,12 +1,15 @@
+//import
 @import "variables";
 @import "colores";
-@import "estructura";
+@import "estrucutra";
 @import "tipografia";
 
-//variables
-$color:red
 
-* {
+
+//variables
+$color:color rgb(214, 8, 8);
+
+*{
     margin: 0%;
 }
 /* tipografia */
@@ -38,7 +41,7 @@ footer {
      background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
 }
 .tituloGrande {
-    color: red;
+    $color: red;
     text-align: center;
     padding: 20px;
     font-size: 50px;
@@ -84,21 +87,16 @@ footer {
 
 }
 #gridArea {
-    display: grid;
+    display:grid
     grid-template-areas:
     "header"
     "nav"
     "main"
     "footer"
     ;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-row-gap: 0px;
+    grid-template-columns:auto
+    grid-template-rows:auto
     
-
-
-
-
 }
 
 /* media queries */
