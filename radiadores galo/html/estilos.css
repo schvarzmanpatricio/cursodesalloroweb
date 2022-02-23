@@ -76,14 +76,14 @@ background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 
 }
 #gridArea {
-    display: grid;
+   display: grid;
     grid-template-areas:
     "header"
     "nav"
     "main"
     "footer"
     ;
-    grid-template-columns: auto;
+    grid-template-columns:auto
     grid-template-rows: auto;
     grid-row-gap: 0px;
     

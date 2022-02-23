@@ -4,6 +4,42 @@
 @import "estrucutra";
 @import "tipografia";
 
+//maps
+$redes: ( 
+        twitter: #55acee,
+        facebook:  #3a5795,
+        instagram: #C25E30
+); 
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
+//extend
+.boton {
+	width:200px;
+	height:50px;
+	background-color:white;
+	text-align:center;
+	color:gray;
+	border-radius:20px;
+	border:1px solid gray;
+}
+
+.boton--aceptar{
+	@extend .boton;
+	background-color:rgb(243, 7, 7);
+	color:rgb(8, 36, 248);
+}
+
+.boton--cancelar{
+	@extend .boton;
+	background-color:rgb(243, 7, 7);
+	color:rgb(8, 36, 248);
+}
+
+
+
 
 
 //variables
@@ -87,16 +123,19 @@ footer {
 
 }
 #gridArea {
-    display:grid
+    display: grid;
     grid-template-areas:
     "header"
     "nav"
     "main"
     "footer"
     ;
-    grid-template-columns:auto
-    grid-template-rows:auto
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+ 
     
+    
+
 }
 
 /* media queries */
@@ -201,14 +240,5 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-row-gap: 0px;
-
-    
-    
-    }
-  
-       
-
-    
+     }
 }
-
-
